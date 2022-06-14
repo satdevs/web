@@ -1,7 +1,5 @@
 <?php
-//namespace App\Controller;
 namespace App\Controller\Admin;
-//use App\Controller\AppController;
 use App\Controller\Admin\AppController;
 
 class TextsController extends AppController{
@@ -21,8 +19,8 @@ class TextsController extends AppController{
             'limit' => 100,
             'order' => [
                 'Texts.headstation_id' => 'asc',
-                'Texts.servicegroup' => 'asc',                
-                'Texts.id' => 'asc',                
+                'Texts.servicegroup' => 'asc',
+                'Texts.id' => 'asc',
             ],
             'conditions' => [
                 //'Texts.xxx' => 1,
@@ -69,7 +67,7 @@ class TextsController extends AppController{
                 'print-media-type' => false,
                 'outline' => true,
                 'dpi' => 96
-            ],             
+            ],
             'margin' => [
                 'bottom' => 5,
                 'left' => 10,
@@ -104,7 +102,7 @@ class TextsController extends AppController{
         $this->Postimages->recursive = -1;
         $postimages = $this->Postimages->find('all',$options);
         $this->set('postimages',$postimages);
-                
+
         $text = $this->Texts->newEntity();
         if ($this->request->is('post')) {
             $this->request->data['user_id'] = $this->Auth->user('id');

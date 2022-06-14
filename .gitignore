@@ -1,7 +1,8 @@
 #/vendor/*
 /config/app.php
-#/tmp/*
-#/logs/*
+/tmp/*
+/tmp/sessions/*
+/logs/*
 /webroot/images/uploads/*
 /webroot/files/*
 /webroot/channels/*
