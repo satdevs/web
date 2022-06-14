@@ -1,0 +1,139 @@
+/*********************************************************************************************************************************
+*	Hibaüzenet input mezőknél
+**********************************************************************************************************************************/
+.error-message{
+	background: red;
+	color: white;
+	font-weight: bold;
+	padding: 1px;
+	padding-left: 5px;
+}
+
+/*********************************************************************************************************************************
+*	Jobb felső sarokban pl a messages lenyíló menü háttere, hogy elkülönüljön a környezetéstől a keret
+**********************************************************************************************************************************/
+.dropdown-menu{
+	-webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);	
+}
+.skin-blue .sidebar-menu > li.header {
+	border-top: 3px double #555;
+    color: #fff;
+}
+
+/*********************************************************************************************************************************
+*	Táblázat sorok színezése
+**********************************************************************************************************************************/
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f0f0f0;
+}
+.table-hover > tbody > tr:hover, .table-hover > tbody > tr:hover a {
+  background-color: #367FA9;
+  color: #fff;
+}
+
+/*********************************************************************************************************************************
+*	Sort utáni nyilacska
+**********************************************************************************************************************************/
+th a.asc::after {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: " \e151";
+    content: " \e155";
+    content: " \e093";
+    content: '↑';
+    margin-left: 3px;
+}
+th a.desc::after {
+    position: relative;
+    top: 0px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 900;
+    line-height: 1;
+    font-size: 16px;
+    color: red;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: " \e152";
+    content: " \e156";
+    content: " \e094";
+    content: '↓';
+    margin-left: 3px;
+}
+
+label.required:before{
+    color: #e32;
+    content: '* ';
+    display:inline;
+}
+
+.login-box-body, .register-box-body {
+    -webkit-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 11px 0px rgba(0,0,0,0.75);  
+}
+
+/*********************************************************************************************************************************
+*	The next
+**********************************************************************************************************************************/
+
+/*
+.navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
+    height: 400px;
+}
+.navbar-nav > .notifications-menu > .dropdown-menu > li .menu,
+.navbar-nav > .tasks-menu > .dropdown-menu > li .menu,
+*/
+.navbar-nav > .messages-menu > .dropdown-menu > li .menu{
+    max-height: 400px;
+}
+
+/*
+.navbar-nav > .notifications-menu > .dropdown-menu, .navbar-nav > .messages-menu > .dropdown-menu, .navbar-nav > .tasks-menu > .dropdown-menu {
+    width: 280px;
+    padding: 0 0 0 0;
+    margin: 0;
+    top: 100%;
+}
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.open > .dropdown-menu {
+    display: block;
+}
+
+*/
+
+#tinymce {
+    padding: 10px;
+}
+
+.box-info img{
+    cursor: pointer;
+}
+
+#uploadfiles{
+    padding: 0px;
+}
+
+
+#users .user-image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+}
